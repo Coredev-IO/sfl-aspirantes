@@ -12,7 +12,7 @@ $( document ).ready(function() {
 		$.ajax({
         url: "http://localhost/SFL-Admin/index.php/api/users/login",
         data: {
-            email : mail,
+            email : email,
             pass : pass
         },
         type: "POST",

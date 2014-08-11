@@ -16,9 +16,9 @@
 
   <link type="text/css" href="css/sfl_style.css" rel="stylesheet" />
   <link type="text/css" href="css/menu.css" rel="stylesheet" />
-  <script type="text/javascript" src="css/jquery.js"></script>
 
-
+<script type="text/javascript" src="resources/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="resources/js/bootstrap.js"></script>
 
 
 
@@ -278,7 +278,7 @@
 
       <!-- Errores-->
                           <div class="box-formulario">
-        <div class="form-horizontal" role="form" name="new_cv" action="sfl_cv_03_.php" method="post" enctype="multipart/form-data">
+        <div class="form-horizontal" >
           <!-- Termina Errores -->
 
           <div class="form-group">
@@ -286,7 +286,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="RFC" size="30" maxlength="50" class="form-control" placeholder="RFC " autofocus="">
+              <input  type="text" id="rfc" class="form-control" placeholder="RFC " autofocus="">
 
             </div>
           </div>
@@ -297,7 +297,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="CURP" size="30" maxlength="50" class="form-control" placeholder="CURP ">
+              <input  id="curp" size="30" maxlength="50" class="form-control" placeholder="CURP ">
 
             </div>
           </div>
@@ -308,7 +308,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="No.DeAfilicacion" size="30" maxlength="50" class="form-control" placeholder="No. de afiliaci&oacute;n al IMSS ">
+              <input  type="text" id="no_imss" size="30" maxlength="50" class="form-control" placeholder="No. de afiliaci&oacute;n al IMSS ">
 
             </div>
           </div>
@@ -320,7 +320,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="No.deClinica" size="30" maxlength="50" class="form-control" placeholder="No. de Cl&iacute;nica ">
+              <input type="text" id="no_clinica" size="30" maxlength="50" class="form-control" placeholder="No. de Cl&iacute;nica ">
 
             </div>
           </div>
@@ -332,7 +332,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="TelefonoParticular" size="30" maxlength="50" class="form-control" placeholder="el&eacute;fono Particular ">
+              <input type="text" id="tel_particular" size="30" maxlength="50" class="form-control" placeholder="el&eacute;fono Particular ">
 
             </div>
           </div>
@@ -344,7 +344,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="TelefonoMovil" size="30" maxlength="50" class="form-control" placeholder="Tel&eacute;fono M&oacute;vil ">
+              <input type="text" id="tel_movil" size="30" maxlength="50" class="form-control" placeholder="Tel&eacute;fono M&oacute;vil ">
 
             </div>
           </div>
@@ -356,7 +356,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="TelefonoOficina" size="30" maxlength="50" class="form-control" placeholder="Tel&eacute;fono Oficina ">
+              <input type="text" id="tel_oficina" size="30" maxlength="50" class="form-control" placeholder="Tel&eacute;fono Oficina ">
 
             </div>
           </div>
@@ -369,7 +369,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="TelefonoRecados" size="30" maxlength="50" class="form-control" placeholder="Tel&eacute;fono Recados ">
+              <input  type="text" id="tel_rec" size="30" maxlength="50" class="form-control" placeholder="Tel&eacute;fono Recados ">
 
             </div>
           </div>
@@ -380,7 +380,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="UsuarioTwitter" size="30" maxlength="50" class="form-control" placeholder="Usuario Twitter ">
+              <input  id="twitter" size="30" maxlength="50" class="form-control" placeholder="Usuario Twitter ">
 
             </div>
           </div>
@@ -392,7 +392,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="UsuarioFacebook" size="30" maxlength="50" class="form-control" placeholder="Usuario Facebook ">
+              <input type="text" id="facebook" size="30" maxlength="50" class="form-control" placeholder="Usuario Facebook ">
 
             </div>
           </div>
@@ -405,7 +405,7 @@
               <div class="col-sm-8">
                 
 
-              <input onkeypress="return event.keyCode!=13" type="text" name="UsuarioLinkdin" size="30" maxlength="50" class="form-control" placeholder="Usuario Linkedin ">
+              <input onkeypress="return event.keyCode!=13" type="text" id="linkedin" size="30" maxlength="50" class="form-control" placeholder="Usuario Linkedin ">
 
             </div>
           </div>
@@ -477,7 +477,7 @@
                   <div class="col-sm-8">
                     
 
-                  <input onkeypress="return event.keyCode!=13" type="text" name="ref_nom" size="50" maxlength="100" class="form-control" placeholder="Nombre " autofocus="">
+                  <input id="ref_nom" type="text" name="ref_nom" size="50" maxlength="100" class="form-control" placeholder="Nombre " autofocus="">
 
                 </div>
               </div>
@@ -498,7 +498,7 @@
                   <div class="col-sm-8">
                     
 
-                  <input onkeypress="return event.keyCode!=13" type="text" name="ref_tel" size="18" maxlength="15" class="form-control" placeholder="Telefono ">
+                  <input id="ref_tel" type="text" name="ref_tel" size="18" maxlength="15" class="form-control" placeholder="Telefono ">
 
                 </div>
               </div>
@@ -509,7 +509,7 @@
                   <div class="col-sm-8">
                     
 
-                  <input onkeypress="return event.keyCode!=13" type="text" name="ref_ocu" size="25" maxlength="30" class="form-control" placeholder="Relaci&oacute;n Laboral ">
+                  <input id="ref_ocu" type="text" name="ref_ocu" size="25" maxlength="30" class="form-control" placeholder="Relaci&oacute;n Laboral ">
 
                 </div>
               </div>
@@ -519,15 +519,14 @@
                   <div class="col-sm-8">
                     
 
-                  <input onkeypress="return event.keyCode!=13" type="number" name="time_con" size="3" maxlength="2" class="form-control" placeholder="Años ">
+                  <input id="time_con" type="number" name="time_con" size="3" maxlength="2" class="form-control" placeholder="Años ">
 
                 </div>
               </div>            
 
     <div class="form-group">
-          <label for="ref_ocu" class="col-sm-4 control-label">**Ingresa al menos una referencia para poder continuar** : </label>
           <div class="col-sm-8">
-            <input type="submit" name="submit" value="&nbsp;&nbsp;Agregar Referencia&nbsp;&nbsp;" class="btn btn-default right" onclick="javascript:window.history.back()">&nbsp;
+            <button type="button" id="add_ref" class="btn btn-default">Agregar Referencia</button>
             <!-- <img class="right" src="images/ayuda.png" alt="ayuda", height="25px" data-toggle="tooltip" data-placement="left" title="Tooltip on left"> -->
           </div>
           
@@ -567,24 +566,21 @@
         
             
            <!-- query a BD referencia-->
-              <table width="500" align="center" border="0" cellspacing="1" cellpadding="4" class=" CSSTableGenerator">
-                <tbody><tr>
-                <!-- <td height="20" class="" align="right" valign="middle">&nbsp;</td> -->
-                <td class="" valign="middle">Nombre</td>
-              <!--   <td class="" valign="middle" >Domicilio</td> -->
-                <td class="" valign="middle">telefono</td>
-                <td class="" valign="middle" align="center"></td>
-              </tr>
-
-      
-</tbody></table>
+              <table id="table_referencia" width="500" align="center" border="0" cellspacing="1" cellpadding="4" class=" CSSTableGenerator">
+              </table>
 
 
 
-
+          <br>
+          <div class="form-group">
+            <div class="col-sm-10">
               
               
-           
+              <button id='up4' type="submit" class="btn btn-primary fa fa-floppy-o"> Actualizar</button>
+              <input type="hidden" name="id_cuenta" value="247">
+              <input type="hidden" name="accion" value="">
+            </div>
+          </div>
             
       
      
@@ -623,6 +619,93 @@
 
 
 
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+              <h4 class="modal-title" id="myModalLabel">Actualizar Referencia</h4>
+            </div>
+            <div class="modal-body">
+                
+                  
+    <div class="box-formulario">
+     <div name="refe" role="form" class="form-horizontal" method="post" action="sfl_cv_04_.php" enctype="multipart/form-data">
+
+
+
+          <div class="form-group">
+                <label for="ref_nom" class="col-sm-4 control-label">Nombre :* </label>
+                  <div class="col-sm-8">
+                    
+
+                  <input id="ref_nomu" type="text" name="ref_nom" size="50" maxlength="100" class="form-control" placeholder="Nombre " autofocus="">
+
+                </div>
+              </div>
+
+          
+         <!--  <div class="form-group">
+                <label for="ref_dom" class="col-sm-4 control-label">Domicilio : </label>
+                  <div class="col-sm-8">
+                    
+
+                  <input onkeypress="return event.keyCode!=13"  type="text" name="ref_dom" size="50" maxlength="100"   class="form-control" placeholder='Domicilio '>
+
+                </div>
+              </div> -->
+
+          <div class="form-group">
+                <label for="ref_tel" class="col-sm-4 control-label">Telefono :* </label>
+                  <div class="col-sm-8">
+                    
+
+                  <input id="ref_telu" type="text" name="ref_tel" size="18" maxlength="15" class="form-control" placeholder="Telefono ">
+
+                </div>
+              </div>
+              
+
+        <div class="form-group">
+                <label for="ref_ocu" class="col-sm-4 control-label">Relaci&oacute;n Laboral : </label>
+                  <div class="col-sm-8">
+                    
+
+                  <input id="ref_ocuu" type="text" name="ref_ocu" size="25" maxlength="30" class="form-control" placeholder="Relaci&oacute;n Laboral ">
+
+                </div>
+              </div>
+
+          <div class="form-group">
+                <label for="time_con" class="col-sm-4 control-label">Tiempo de conocerlos :* </label>
+                  <div class="col-sm-8">
+                    
+
+                  <input id="time_conu" type="text" name="time_con" class="form-control" placeholder="Años ">
+
+                </div>
+              </div>            
+
+    <div class="form-group">
+          <div class="col-sm-8">
+            <input id="id_refu" type="hidden" class="form-control">
+            <button type="button" id="up_refu" class="btn btn-default">Actualizar Referencia</button>
+            <!-- <img class="right" src="images/ayuda.png" alt="ayuda", height="25px" data-toggle="tooltip" data-placement="left" title="Tooltip on left"> -->
+          </div>
+          
+    </div> 
+
+
+
+            </div></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
 
@@ -653,14 +736,14 @@
           <div class="form-group">
             <label for="lug_nac" class="col-sm-4 control-label">Lugar de Nacimiento : </label>
             <div class="col-sm-8">
-              <input onkeypress="return event.keyCode!=13" ttype="text" name="lug_nac" size="25" maxlength="30" class="form-control" placeholder="Lugar de Nacimiento" autofocus="">
+              <input type="text" id="lug_nac" size="25" maxlength="30" class="form-control" placeholder="Lugar de Nacimiento" autofocus="">
             </div>
           </div>
           
           <div class="form-group">
             <label for="genero" class="col-sm-4 control-label">Genero :</label>
             <div class="col-sm-8">
-                  <select name="genero" class="form03">
+                  <select id="genero" class="form03">
                  <option> &nbsp;</option>
                  <option value="Hombre">Hombre</option>
                  <option value="Mujer">Mujer</option>
@@ -671,7 +754,7 @@
           <div class="form-group">
             <label for="edo_civil" class="col-sm-4 control-label">Estado Civil:</label>
             <div class="col-sm-8">
-                <select name="edo_civil" class="form03">
+                <select id="edo_civil" class="form03">
              <option value=" "> &nbsp;</option>
              <option value="Casado">Casado</option>
              <option value="Divorciado">Separado/Divorciado</option>
@@ -686,8 +769,8 @@
             <label for="CuentaAuto" class="col-sm-4 control-label">¿Cuenta con automovil propio?:</label>
             <div class="col-sm-8">
                   
-                 Si<input type="radio" name="auto_prop" value="si" class="form03">
-                  No<input type="radio" name="auto_prop" checked="" value="no" class="form03">
+                 Si<input type="radio" name="auto_prop" value="SI" class="form03">
+                  No<input type="radio" name="auto_prop" value="NO" class="form03">
 
             </div>
           </div>
@@ -696,8 +779,8 @@
           <div class="form-group">
             <label for="ManejaAuto" class="col-sm-4 control-label">¿Maneja automovil est&aacute;ndar?::</label>
             <div class="col-sm-8">
-                                  Si<input type="radio" name="auto_esta" value="si" class="form03">
-                 No<input type="radio" name="auto_esta" checked="" value="no" class="form03">
+                                  Si<input type="radio" name="auto_esta" value="SI" class="form03">
+                 No<input type="radio" name="auto_esta"  value="NO" class="form03">
 
             </div>
           </div>
@@ -706,8 +789,8 @@
             <label for="ManejoCarretera" class="col-sm-4 control-label">¿Cuenta con experiencia de manejo en carretera?:</label>
             <div class="col-sm-8">
                     
-                   Si<input type="radio" name="mane_carre" value="si" class="form03">
-                   No<input type="radio" checked="" name="mane_carre" value="no" class="form03">
+                   Si<input type="radio" name="mane_carre" value="SI" class="form03">
+                   No<input type="radio" name="mane_carre" value="NO" class="form03">
 
             </div>
           </div>
@@ -715,16 +798,16 @@
           <div class="form-group">
             <label for="DisponibleViajar" class="col-sm-4 control-label">Disponibilidad para Viajar : </label>
             <div class="col-sm-8">
-                                  Si<input type="radio" name="dispo_viaj" value="si" class="form03">
-                  No<input type="radio" checked="" name="dispo_viaj" value="no" class="form03">
+                                  Si<input type="radio" name="dispo_viaj" value="SI" class="form03">
+                  No<input type="radio"  name="dispo_viaj" value="NO" class="form03">
             </div>
           </div>
 
           <div class="form-group">
             <label for="DisponibleCambiar" class="col-sm-4 control-label">Disponibilida para cambiar de residencia: </label>
             <div class="col-sm-8">
-                                   Si<input type="radio" name="dispo_res" value="si" class="form03">
-                  No<input type="radio" checked="" name="dispo_res" value="no" class="form03">
+                                   Si<input type="radio" name="dispo_res" value="SI" class="form03">
+                  No<input type="radio" name="dispo_res" value="NO" class="form03">
             </div>
           </div>
 
@@ -733,7 +816,7 @@
           <div class="form-group">
             <div class="col-sm-offset-4 col-sm-10">
                   
-                  <button id='up5' type="submit" name="submit" value="Continuar" class="btn btn-primary fa fa-floppy-o"> Actualizar</button>
+                  <button id='up5' name="submit" value="Continuar" class="btn btn-primary fa fa-floppy-o"> Actualizar</button>
                   <input type="hidden" name="id_cuenta" value="247">
 
 
